@@ -1,21 +1,32 @@
-import ImageFigures from "../assets/Cifras de niños.png"
+import ImageFigures from "../assets/Cifras de niños.png";
 
 export default function Figures() {
     return (
-        <>
-            <section className="text-center p-40">
-                <div className="text-[#FADA63] text-[36px] font-bold">
-                    Algunas Cifras de{" "}
-                    <label className="text-[#F48C06]">
-                        México
-                    </label>
-                </div>
-                <div className="text-[24px] pt-10">Algunos de los numeros actuales de niños y niñas en situaciones criticas</div>
+        <section className="py-24 bg-white">
+            <div className="max-w-full mx-auto px-6 text-center">
 
-                <div className="flex justify-center p-40">
-                    <img src={ImageFigures} alt="Imagenes de cifras de niños"/>
+                <h2 className="font-bold">
+                <span className="text-[#FADA63] text-2xl sm:text-3xl lg:text-4xl">
+                    Algunas Cifras de{" "}
+                </span>
+                <span className="text-[#F48C06] text-2xl sm:text-3xl lg:text-4xl">
+                    México
+                </span>
+                </h2>
+
+                <p className="mt-6 text-base sm:text-lg lg:text-xl text-[#696984] max-w-3xl mx-auto">
+                    Algunos de los números actuales de niños y niñas en situaciones críticas
+                </p>
+
+                <div className="mt-16 flex justify-center">
+                    <img
+                        src={ImageFigures}
+                        alt="Imágenes de cifras de niños"
+                        className="w-full max-w-7xl object-contain"
+                    />
                 </div>
-            </section>
-        </>
-    )
+
+            </div>
+        </section>
+    );
 }
