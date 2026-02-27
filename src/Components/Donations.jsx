@@ -4,7 +4,7 @@ export default function Donations() {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log("Haciendo click al boton");
+        console.log("Redireciconando a donaciones");
     }
 
     return (
@@ -27,12 +27,13 @@ export default function Donations() {
                         Nuestra fundación se apoya de donaciones por los grandes corazones que nos apoyan. Si quieres poner tu pedacito de cielo, lo recibiremos con mucho gusto.
                     </p>
                     <div className="flex justify-center md:justify-start mt-6">
-                        <button
-                            className="w-40 h-14 md:h-16 rounded-full bg-gradient-to-r from-[#00C6AE] to-[#60A9F4] text-white text-lg md:text-xl shadow-xl"
-                            onClick={onSubmit}
-                        >
-                            Donar
-                        </button>
+                        <a href="https://buy.stripe.com/5kQ4gs9Zz4rT2Z84VL9Zm00">
+                            <button
+                                className="w-40 h-14 md:h-16 rounded-full bg-gradient-to-r from-[#00C6AE] to-[#60A9F4] text-white text-lg md:text-xl shadow-xl hover:cursor-pointer"
+                            >
+                                Donar
+                            </button>
+                        </a>
                     </div>
                 </div>
 
